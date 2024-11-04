@@ -1,20 +1,19 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import { Button } from './src/componets/button';
+import { Button as RegisterButton} from './src/components/button';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Hello world!</Text>
+    <View style={alignment.container}>
       <StatusBar style="auto" />
-      <Button text={'Fafa'}/>
-      <Button text={'Jose valdo'}/>
-      <Button text={'gente ruim'}/>
+      <RegisterButton text={'SIGN UP'} />
+      <RegisterButton text={'REGISTER'} />
+      <RegisterButton text={'CONFIRM'} />
     </View>
   );
 }
 
-const styles = StyleSheet.create({
+const alignment = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
